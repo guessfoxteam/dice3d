@@ -2,7 +2,6 @@
 #include <eosiolib/dispatcher.hpp>
 
 #include "dice.cpp"
-#include "roulette.cpp"
 #include "f3d.cpp"
 
 
