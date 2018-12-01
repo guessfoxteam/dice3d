@@ -1,0 +1,697 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sat Dec  1 05:03:27 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "bet_item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "bet_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "is_free",
+                    "type": "bool"
+                },
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "inviter",
+                    "type": "name"
+                },
+                {
+                    "name": "bet_asset",
+                    "type": "asset"
+                },
+                {
+                    "name": "payout",
+                    "type": "asset"
+                },
+                {
+                    "name": "roll_type",
+                    "type": "uint8"
+                },
+                {
+                    "name": "roll_border",
+                    "type": "uint64"
+                },
+                {
+                    "name": "roll_value",
+                    "type": "uint64"
+                },
+                {
+                    "name": "seed",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "time",
+                    "type": "time_point"
+                }
+            ]
+        },
+        {
+            "name": "buykeys",
+            "base": "",
+            "fields": [
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "dicereceipt",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "bet_asset",
+                    "type": "asset"
+                },
+                {
+                    "name": "payout",
+                    "type": "asset"
+                },
+                {
+                    "name": "roll_type",
+                    "type": "uint8"
+                },
+                {
+                    "name": "roll_border",
+                    "type": "uint64"
+                },
+                {
+                    "name": "roll_value",
+                    "type": "uint64"
+                },
+                {
+                    "name": "seed",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "bet_time",
+                    "type": "time_point"
+                }
+            ]
+        },
+        {
+            "name": "diceresolved",
+            "base": "",
+            "fields": [
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "roll_type",
+                    "type": "uint8"
+                },
+                {
+                    "name": "roll_border",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "dicestart",
+            "base": "",
+            "fields": [
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "roll_type",
+                    "type": "uint8"
+                },
+                {
+                    "name": "roll_border",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "erase",
+            "base": "",
+            "fields": [
+                {
+                    "name": "player",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "global",
+            "base": "",
+            "fields": [
+                {
+                    "name": "cur_bet_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "cur_round_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "next_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "team_account",
+                    "type": "name"
+                },
+                {
+                    "name": "token_account",
+                    "type": "name"
+                },
+                {
+                    "name": "min_bet",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_bet",
+                    "type": "asset"
+                },
+                {
+                    "name": "free_fund_pool",
+                    "type": "asset"
+                },
+                {
+                    "name": "team_fund",
+                    "type": "asset"
+                },
+                {
+                    "name": "resv",
+                    "type": "asset"
+                },
+                {
+                    "name": "f3d_fee",
+                    "type": "uint8"
+                },
+                {
+                    "name": "p3d_fee",
+                    "type": "uint8"
+                },
+                {
+                    "name": "resv2",
+                    "type": "uint8"
+                },
+                {
+                    "name": "round_max_interval",
+                    "type": "uint64"
+                },
+                {
+                    "name": "round_reduce",
+                    "type": "uint64"
+                },
+                {
+                    "name": "round_inc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "resv3",
+                    "type": "uint64"
+                },
+                {
+                    "name": "active",
+                    "type": "bool"
+                },
+                {
+                    "name": "round_divi",
+                    "type": "uint8[]"
+                }
+            ]
+        },
+        {
+            "name": "global2_item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "val",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "init",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "keyreceipt",
+            "base": "",
+            "fields": [
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "buy_asset",
+                    "type": "asset"
+                },
+                {
+                    "name": "keys",
+                    "type": "uint64"
+                },
+                {
+                    "name": "time",
+                    "type": "time_point"
+                }
+            ]
+        },
+        {
+            "name": "player_item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "inviter",
+                    "type": "name"
+                },
+                {
+                    "name": "round_assets",
+                    "type": "asset"
+                },
+                {
+                    "name": "win",
+                    "type": "asset"
+                },
+                {
+                    "name": "gen",
+                    "type": "asset"
+                },
+                {
+                    "name": "aff",
+                    "type": "asset"
+                },
+                {
+                    "name": "resv",
+                    "type": "asset"
+                },
+                {
+                    "name": "free_times",
+                    "type": "uint32"
+                },
+                {
+                    "name": "last_roundid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "mask",
+                    "type": "asset"
+                },
+                {
+                    "name": "keys",
+                    "type": "uint64"
+                },
+                {
+                    "name": "last_buykeys",
+                    "type": "uint64"
+                },
+                {
+                    "name": "last_betid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "last_bettime",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_free_tiems",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "resetend",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "round_item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "pot",
+                    "type": "asset"
+                },
+                {
+                    "name": "keys",
+                    "type": "uint64"
+                },
+                {
+                    "name": "mask",
+                    "type": "asset"
+                },
+                {
+                    "name": "start_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "end_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "resv",
+                    "type": "uint64"
+                },
+                {
+                    "name": "resv2",
+                    "type": "uint64"
+                },
+                {
+                    "name": "last_bet_player",
+                    "type": "name"
+                },
+                {
+                    "name": "ended",
+                    "type": "bool"
+                },
+                {
+                    "name": "bet_top_player",
+                    "type": "name[]"
+                }
+            ]
+        },
+        {
+            "name": "roundfee_item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "to_winner",
+                    "type": "asset"
+                },
+                {
+                    "name": "to_team",
+                    "type": "asset"
+                },
+                {
+                    "name": "to_next_round",
+                    "type": "asset"
+                },
+                {
+                    "name": "resv",
+                    "type": "asset"
+                },
+                {
+                    "name": "to_bet_top",
+                    "type": "asset[]"
+                }
+            ]
+        },
+        {
+            "name": "setactive",
+            "base": "",
+            "fields": [
+                {
+                    "name": "active",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "setfees",
+            "base": "",
+            "fields": [
+                {
+                    "name": "f3d_fee",
+                    "type": "uint8"
+                },
+                {
+                    "name": "p3d_fee",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "setfundpoll",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "setglobal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "val",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setmaxbet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "setminbet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "setrounddivi",
+            "base": "",
+            "fields": [
+                {
+                    "name": "divides",
+                    "type": "uint8[]"
+                }
+            ]
+        },
+        {
+            "name": "setroundtime",
+            "base": "",
+            "fields": [
+                {
+                    "name": "max_interval",
+                    "type": "uint64"
+                },
+                {
+                    "name": "sub",
+                    "type": "uint64"
+                },
+                {
+                    "name": "add",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "withdraw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "player",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "buykeys",
+            "type": "buykeys",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "dicereceipt",
+            "type": "dicereceipt",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "diceresolved",
+            "type": "diceresolved",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "dicestart",
+            "type": "dicestart",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "erase",
+            "type": "erase",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "init",
+            "type": "init",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "keyreceipt",
+            "type": "keyreceipt",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "resetend",
+            "type": "resetend",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setactive",
+            "type": "setactive",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setfees",
+            "type": "setfees",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setfundpoll",
+            "type": "setfundpoll",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setglobal",
+            "type": "setglobal",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setmaxbet",
+            "type": "setmaxbet",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setminbet",
+            "type": "setminbet",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setrounddivi",
+            "type": "setrounddivi",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setroundtime",
+            "type": "setroundtime",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdraw",
+            "type": "withdraw",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "bets",
+            "type": "bet_item",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "global",
+            "type": "global",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "global2",
+            "type": "global2_item",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "players",
+            "type": "player_item",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "roundfee",
+            "type": "roundfee_item",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "rounds",
+            "type": "round_item",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
